@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01documentReady.html</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+    <script>
+        //jQuery(document).ready(() => {
+        //    $("h1").css("color", "pink");// 2個參數為設定屬性
+        //    console.log($("h1").css("color"));// 1個參數為讀取屬性的值
+        //});
+
+        $(() => {
+            //$("h1").css("color", "green");
+            //console.log($("h1").css("color"));
+            console.log($("h1").css("color", "red").css("color"));// 設定完取值
+            console.log($("h1").css("color").css("color", "red"));// 先取值再設定(錯誤:取值回傳String，不可再設定(需jQuery物件))
+        })
+    </script>
+</head>
+<body>
+    <!--<script src="../js/jquery-3.6.0.min.js"></script>-->
+    <h1>write less,do more</h1>
+
+
+</body>
+</html>

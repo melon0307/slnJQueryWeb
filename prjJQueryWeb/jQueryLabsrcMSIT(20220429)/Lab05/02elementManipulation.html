@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02elementManipulation.html</title>
+</head>
+<body>
+    <h2>Greetings</h2>
+    <div class="container">
+        <div class="inner">Hello</div>
+        <div class="inner">Goodbye</div>
+    </div>    
+    <hr>    
+    <input type="button" id="btn1" value="remove()">
+    <input type="button" id="btn2" value="empty()">
+    <input type="button" id="btnapp" value="append()">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>            
+        $("#btn1").click(function(){               
+            $(".inner").remove();  //用F12查看                
+        });
+        
+        $("#btn2").click(function(){               
+            $(".inner").empty();
+            // $(".container").empty();
+        });
+
+        $("#btnapp").click(function(){  //用F12查看
+            $(".inner").append("<b>append</b>"); 
+            // $(".inner").append("append");              
+        });
+    </script>
+</body>
+</html>

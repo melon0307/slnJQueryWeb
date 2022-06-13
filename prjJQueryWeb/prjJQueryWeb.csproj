@@ -1,0 +1,396 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{74125E9A-F1C8-4284-A472-05712FC80D83}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>prjJQueryWeb</RootNamespace>
+    <AssemblyName>prjJQueryWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44399</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\all.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\all.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\brands.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\brands.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\fontawesome.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\fontawesome.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\regular.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\regular.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\solid.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\solid.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\svg-with-js.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\svg-with-js.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\v4-font-face.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\v4-font-face.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\v4-shims.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\v4-shims.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\v5-font-face.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\css\v5-font-face.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\bg.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\checked.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\cmxform-divider.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\cmxform-fieldset.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\loading.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\ui-icons_444444_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\ui-icons_555555_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\ui-icons_777620_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\ui-icons_777777_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\images\unchecked.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\magnific\magnific-popup.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\base\jquery-ui.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\base\jquery-ui.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\base\theme.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\cupertino\jquery-ui.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\cupertino\jquery-ui.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\flora.resizable.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\functional_demos.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\accordion-left-act.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\accordion-left-over.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\accordion-left.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\accordion-middle-act.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\accordion-middle-over.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\accordion-middle.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\accordion-right-act.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\accordion-right-over.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\accordion-right.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\dialog-e.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\dialog-n.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\dialog-ne.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\dialog-nw.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\dialog-s.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\dialog-se.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\dialog-sw.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\dialog-title.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\dialog-titlebar-close-hover.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\dialog-titlebar-close.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\dialog-w.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\resizable-e.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\resizable-n.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\resizable-ne.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\resizable-nw.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\resizable-s.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\resizable-se.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\resizable-sw.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\resizable-w.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\slider-bg-1.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\slider-bg-2.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\slider-handle.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\tabs.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\Start\jquery-ui.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\Start\jquery-ui.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\Validation\cmxform.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\Validation\cmxformTemplate.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\Validation\core.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\Validation\reset.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\Validation\screen.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\favicon.ico" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\js\jquery-3.6.0.min.js" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\js\jquery-ui.js" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\js\jquery.color-2.2.0.min.js" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\js\jquery.easing.js" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\js\lightbox.js" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab01\01documentReady.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab01\02chain.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab01\review.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\01basicSelector.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\02formSelector.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\03formSelector2.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\04attributeSelector.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\05HierarchySelector.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\06childSelector.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\07contentSelector.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\08basicfilterSelector.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\image1.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\image2.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\image3.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\image4.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\image5.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\image6.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\image7.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\n1.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\n2.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\n3.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\n4.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\n5.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\pdf_icon.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab02\images\word_icon.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\01filterTraversing.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\02filterTraversing2.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\03nextprevTraversing.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\04parentTraversing.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\05childTraversing.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\06siblingendTraversing.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\07closestDemo.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\08endDemo.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\images\1012.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\images\pokemon1.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\images\pokemon2.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\images\pokemon3.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\images\pokemon4.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\images\pokemon5.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\images\pokemon6.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab03\images\下載.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\01mouseevent.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\02contextmenu.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\03moueOverEnter.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\04hover.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\05imghover.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\06transition.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\07flex1.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\08flex2.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\09dotli.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\10slider.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\11keyevent.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\12formevent.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\13windowevent.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\get.aspx" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\arrow1.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\arrow2.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\chngstar.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\slide1.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\slide2.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\slide3.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\slide4.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\slide5.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\sport.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\star.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\tesla1.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\tesla2.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\mousepriority.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab05\01onevent.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab05\02elementManipulation.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab05\03eventbubble.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab05\04eventBinding.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab05\05oneoffevent.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab06\01elementContent.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab06\02elementAttribute.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab06\03AttrProp.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab06\04elementManipulation.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab06\05appendRemove.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab06\06each.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab06\07cart.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab06\08jQueryeach.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab07\01cssManipulation.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab07\02cssmove.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab07\03resize.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab07\04cssvhvw.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab07\05scroll.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab07\images\tesla1.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab07\images\tesla2.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\01csstransition.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\02csspriority.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\03addremoveClass.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\04photoaddClass.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\05multipleCSS.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\06hasClass.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\07csstransform.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\08showhidemenu.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\09scrollfix.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\10data.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\11cssmove.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\12changeFontSize.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\13changeFontSizeCSS.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\images\pokemon1.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\images\pokemon2.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\images\pokemon3.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\images\pokemon4.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\images\pokemon5.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab08\images\pokemon6.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\01showhide.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\02callbackFunction.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\03slideDownUp.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\04fadeInOut.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\05animate.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\06animateColor.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\07animateEasing.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\08animatestop.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\images\birdfly.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\images\car.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\images\car2.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\images\car3.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab09\images\dogrunning.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\01drag.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\02autocomplete.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\03dragdrop.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\03dragdrop2.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\images\01a.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\images\01b.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\images\01c.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\images\car.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\images\slide1.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\AUTHORS.txt" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\external\jquery\jquery.js" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-icons_0078ae_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-icons_056b93_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-icons_e0fdff_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-icons_f5e175_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-icons_f7a50d_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\images\ui-icons_fcd113_256x240.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\index.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\jquery-ui.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\jquery-ui.js" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\jquery-ui.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\jquery-ui.min.js" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\jquery-ui.structure.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\jquery-ui.structure.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\jquery-ui.theme.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\jquery-ui.theme.min.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\LICENSE.txt" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\01datepicker.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\02dialog.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\03tooltip.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\04slider.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\css\style.css" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\images\101.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\images\101s.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\images\101s.png" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\images\calendar.1.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\images\calendar.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\images\Qixing.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄一\images\Qixing2.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄二\01lightbox.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄二\02datatable.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\附錄二\css\lightbox.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="jQueryLabsrcMSIT%2820220429%29\Lab04\get.aspx.cs">
+      <DependentUpon>get.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\webfonts\fa-brands-400.ttf" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\webfonts\fa-brands-400.woff2" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\webfonts\fa-regular-400.ttf" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\webfonts\fa-regular-400.woff2" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\webfonts\fa-solid-900.ttf" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\webfonts\fa-solid-900.woff2" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\fontawesome-free-6.1.1-web\webfonts\fa-v4compatibility.woff2" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\css\themes\flora\i\Thumbs.db" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\get.jsp" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab10\UI\jquery-ui-1.13.0.custom\package.json" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50822</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44399/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

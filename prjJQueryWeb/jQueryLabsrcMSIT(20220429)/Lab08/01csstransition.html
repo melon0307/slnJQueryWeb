@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>01csstransition.html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .box1 {
+            float:left;
+            margin: 20px;
+            background: paleturquoise;
+            border-radius: 6px;
+            height: 95px;
+            width: 95px;            
+        }
+
+        .box1:hover {
+            background: plum;
+            border-radius: 50%;
+        }
+        .box2 {
+            float:left;
+            margin: 20px;
+            background: paleturquoise;
+            border-radius: 6px;
+            height: 95px;
+            width: 95px;
+            
+            /* transition:1s; */
+            transition: background .2s linear, border-radius 1s ease-in 1s;
+        }
+
+        .box2:hover {
+            background: plum;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

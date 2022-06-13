@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1 id="h"><i>this is heading1</i></h1>
+    <h1>this is heading2</h1>
+    <h1>this is heading3</h1>    
+    <script>
+        //// JavaScript
+        //let hObj = document.getElementById("h");  // object,element
+        ////console.log(hObj);
+        //hObj = document.querySelector("h1");  // element
+        ////console.log(hObj);
+        //let hObjAll = document.querySelectorAll("#h");// 多個物件
+        ////console.log(hObjAll);
+
+        //// JavaScript讀取物件的內容
+        //let hObjContent = hObj.innerHTML;
+        //console.log(hObjContent);
+        //hObjContent = hObj.textContent;
+        //console.log(hObjContent);
+        //hObjContent = hObjAll[0].innerHTML;
+        //console.log(hObjContent);               
+
+        //// jQuery // 多個物件
+        //hSelector = jQuery("#h");
+        ////console.log(hSelector);
+        //hSelector = $("#h");
+        ////console.log(hSelector);
+        //hSelector = $("h1");
+        ////console.log(hSelector);
+
+        //// jQuery讀取物件的內容
+        //let hSelectorContent = hSelector.html();
+        //console.log(hSelectorContent);
+        //hSelectorContent = hSelector.text();
+        //console.log(hSelectorContent);
+        //hSelectorContent = $("#h").html();
+        //console.log(hSelectorContent);
+
+    </script>
+    <h1 id="jm">method1</h1>
+    <script>
+        // jQuery
+        //$(Selector).event(handler)
+
+        // 1.
+        //function f() {
+        //    alert("Method jQuery");
+        //}
+        //$("#jm").click(f);
+
+        // 2.
+        $("#jm").click(() => {
+            alert("Method jQuery");
+        });
+
+        //U5
+
+    </script>
+</body>
+</html>

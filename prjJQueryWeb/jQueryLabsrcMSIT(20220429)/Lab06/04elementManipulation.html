@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04elementManipulation.html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h2>computer language</h2>
+        <div class="outter">
+            <div class="inner">HTML</div>
+            <div class="inner">JavaScript</div>
+            <div class="inner">jQuery</div>
+        </div>
+        
+        <hr>
+        <input class="btn btn-primary" type="button" id="btnapp" value="append()">
+        <input class="btn btn-primary" type="button" id="btnpre" value="prepend()">
+        <input class="btn btn-primary" type="button" id="btnappTo" value="appendTo()">
+        <input class="btn btn-primary" type="button" id="btnpreTo" value="prependTo()"><br><br>
+        <input class="btn btn-primary" type="button" id="btnafter" value="after()">
+        <input class="btn btn-primary" type="button" id="btnbefore" value="before()">
+        <input class="btn btn-primary" type="button" id="btninsAfter" value="insertAfter()">
+        <input class="btn btn-primary" type="button" id="btninsBefore" value="insertBefore()"><br><br>
+        <input class="btn btn-primary" type="button" id="btnremove" value="remove()">
+        <input class="btn btn-primary" type="button" id="btnempty" value="empty()">
+    </div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#btnapp").click(function(){  //用F12查看
+            // $(".inner").append("<b>append</b>"); 
+            $(".inner").append("append");              
+        });
+
+        $("#btnpre").click(function(){                
+            $(".inner").prepend("<b>prepebd</b>");
+        });
+
+        $("#btnappTo").click(function(){               
+            $("<b>appendTo</b>").appendTo(".inner");
+            // $("appendTo").appendTo(".inner"); //錯誤的寫法,因為無法變成jQuery物件
+        });
+
+        $("#btnpreTo").click(function(){               
+            $("<b>prependTo</b>").prependTo(".inner");
+        });
+
+        $("#btnafter").click(function(){               
+            $(".inner").after("<b>after</b>");
+        });
+
+        $("#btnbefore").click(function(){               
+            $(".inner").before("<b>before</b>");
+        });
+
+        $("#btninsAfter").click(function(){
+            $("<b>insertAfter</b>").insertAfter(".inner");               
+        });
+
+        $("#btninsBefore").click(function(){                
+            $("<b>insertBefore</b>").insertBefore(".inner");
+        });
+
+
+        $("#btnremove").click(function(){               
+            $(".inner").remove();  //用F12查看                
+        });
+        
+        $("#btnempty").click(function(){               
+            $(".inner").empty();
+            // $(".container").empty();
+        });
+    </script>
+</body>
+</html>

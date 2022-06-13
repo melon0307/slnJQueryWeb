@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>06hasClass.html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .color{
+            width: 48px;
+            height: 48px;
+            margin:10px;
+            border-radius:50%;
+        }
+        .bd{
+            border:5px solid blue;           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="py-2">
+            <button id="has" type="button" class="btn btn-primary">has</button>
+        </div>
+        <div class="row py-2">
+            <div class="col-6 d-flex">
+                <div class="color has" style="background: red"></div>
+                <div class="color" style="background: yellow"></div>
+                <div class="color has" style="background: green"></div>
+            </div>
+        </div>
+    </div> 
+        
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#has").click(function(){ 
+            //找出class為color的選擇器中，含有has的類別,新增bd類別              
+                
+        });
+    </script>
+
+
+</body>
+</html>
