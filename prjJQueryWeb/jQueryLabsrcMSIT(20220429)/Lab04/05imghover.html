@@ -9,7 +9,13 @@
 
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script>
-                    
+        $("#img1").hover((event) => {
+            $(event.currentTarget).prop("src", "images/chngstar.gif");
+        },
+            (event) => {
+                $(event.currentTarget).prop("src", "images/star.gif");                
+            }
+        )       
     </script> 
 </body>  
 </html>

@@ -21,9 +21,20 @@
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script>       
         //在文件的contextmenu事件，取消預設的動作(preventDefault)
-        $(document).contextmenu(function(event){
-            
-        });                            
+        //$(document).contextmenu(function(event){
+        //    event.preventDefault();
+        //});   
+
+        // img取消右鍵事件
+        $("img").contextmenu((event) => {
+            event.preventDefault();
+        });
+
+        // 若鍵盤keydown(ctrl+c)，則取消事件
+        $(document).keydown((event) => {
+            if (event.ctrlKey && event.which == 67)
+                event.preventDefault(); 
+        }); 
     </script>
 </body>
 </html>

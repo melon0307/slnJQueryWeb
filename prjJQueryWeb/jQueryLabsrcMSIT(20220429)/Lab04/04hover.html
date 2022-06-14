@@ -21,6 +21,7 @@
     
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script> 
+        // 跟"p","#idp"優先級無關，此處與程式先後順序有關(後面覆蓋前面)
         $("p").hover(function(){
             $(this).css("color","red");
         },function(){

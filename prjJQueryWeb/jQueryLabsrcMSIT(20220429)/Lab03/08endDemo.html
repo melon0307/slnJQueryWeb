@@ -39,7 +39,8 @@
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script>
         $("figure").click(function(){
-
+            //$(this).css("border", "solid 2px rgba(255,0,0,1)").siblings().css("border", "solid 2px rgba(0,0,0,0)");
+            $(this).siblings().css("border", "solid 2px rgba(0,0,0,0)").end().css("border", "solid 2px rgba(255,0,0,1)");
         });
     </script>
 </body>

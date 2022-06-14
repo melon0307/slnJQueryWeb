@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="ratingBox">
+        <img id="img1" class="i" src="images/star.gif" />
+        <img id="img2" class="i" src="images/star.gif" />
+        <img id="img3" class="i" src="images/star.gif" />
+        <img id="img4" class="i" src="images/star.gif" />
+        <img id="img5" class="i" src="images/star.gif" />
+    </div>
+    <div>
+        <h3 class="label">評分中...0</h3>
+    </div>
+    <script>      
+        $(".i").mouseenter(function () {
+            $(this).prop("src", "images/chngstar.gif").prevAll().prop("src", "images/chngstar.gif").end().nextAll().prop("src", "images/star.gif");
+            let index = $(this).index();
+            $(".label").text("評分中..." + (index + 1));
+        });
+
+        $(".ratingBox").mouseleave(function () {
+            $(".i").prop("src", "images/star.gif")
+            $(".label").text("評分中...0");
+        });
+
+        $("img").click(function () {
+            $(".i").off("mouseenter");
+            $(".ratingBox").off("mouseleave");
+            let index = $(this).index();
+            $(".label").text("評分為..." + (index + 1)+"星");
+        });
+    </script>
+</body>
+</html>

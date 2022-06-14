@@ -10,7 +10,7 @@
             position: relative;
             width:800px;
             height:300px;
-            overflow: hidden;
+            /*overflow: hidden;*/
             margin:0 auto;   
         }
         ul{
@@ -113,10 +113,15 @@
 
         $(".dot li").eq(0).css("background-color", "white");
         $(".dot li").mouseenter(function () {
+            slideNum = $(this).index();
+
             $(this).css("background-color", "white")
-                .siblings().css("background-color", "transparent")
+                .siblings().css("background-color", "transparent");
+
+            let slideMove = 0 - 800 * slideNum;
+            $("ul.slides").css("left", slideMove);
         })
-           
+
     </script>
 </body>
 </html>

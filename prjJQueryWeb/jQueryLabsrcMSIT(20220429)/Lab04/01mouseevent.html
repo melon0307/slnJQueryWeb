@@ -23,34 +23,40 @@
 
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script>
-        $("#click").click(function(){
-            console.log("click");                            
+        $("#click").click(function(event){
+            console.log("click");
+            console.log(event.type);
         });
         
-        $("#dblclick").dblclick(function(){
-            console.log("double click")
+        $("#dblclick").dblclick(function(event){
+            console.log("double click");
+            console.log(event.type);
         });
-        $("#contextmenu").contextmenu(function(){
-            console.log("contextmenu");              
+        $("#contextmenu").contextmenu(function(event){
+            console.log("contextmenu");
+            console.log(event.type);
         });
 
-        $("#mouseDown").mousedown(function(){
+        $("#mouseDown").mousedown(function(event){
             console.log("mouse down")
         });
-        $("#mouseUp").mouseup(function(){
+        $("#mouseUp").mouseup(function(event){
             console.log("mouse up")
         });
-        $("#mouseEnter").mouseenter(function(){
+        $("#mouseEnter").mouseenter(function(event){
             console.log("mouse enter")
         })
-        $("#mouseLeave").mouseleave(function(){
+        $("#mouseLeave").mouseleave(function(event){
             console.log("mouse leave")
         });
 
-        $("#hover").hover(function(){
-            console.log("enter")
-        }, function(){
-            console.log("leave")
+        $("#hover").hover(function(event){
+            console.log("enter");
+            console.log(event.type); // mouseenter
+            
+        }, function(event){
+                console.log("leave");
+                console.log(event.type); // mouseleave
         });
 
         $("#iddiv1").click(function(event){

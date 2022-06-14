@@ -26,7 +26,7 @@
         ul.slides{
             width: 3200px;
             left: 0px;
-            transition: all .5s;
+            transition: all .8s;
         }
         ul.slides li{
             width:800px;
@@ -47,9 +47,9 @@
         }
         .dot li{
             border:1px solid #fff;
-            /* border-radius: 50%; */
+            border-radius: 50%; 
             margin: 0 5px;
-            width:24px;
+            width:10px;
             height: 10px;
         }
         /*.dot li:hover{
@@ -113,10 +113,18 @@
 
         $(".dot li").eq(0).css("background-color", "white");
         $(".dot li").mouseenter(function () {
-            $(this).css("background-color", "white")
-                .siblings().css("background-color", "transparent")
+            slideNum = $(this).index();
+
+            show();
         })
-           
+
+        function show() {
+            $(".dot li").eq(slideNum).css("background-color", "white")
+                .siblings().css("background-color", "transparent");
+
+            let slideMove = 0 - 800 * slideNum;
+            $("ul.slides").css("left", slideMove);
+        }
     </script>
 </body>
 </html>

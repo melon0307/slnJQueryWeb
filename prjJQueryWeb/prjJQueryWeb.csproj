@@ -151,6 +151,15 @@
     <Content Include="jQueryLabsrcMSIT%2820220429%29\css\Validation\reset.css" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\css\Validation\screen.css" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\favicon.ico" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\homework\images\chngstar.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\homework\images\slide1.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\homework\images\slide2.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\homework\images\slide3.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\homework\images\slide4.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\homework\images\slide5.jpg" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\homework\images\star.gif" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\homework\Rating.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\homework\Slide.html" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\js\jquery-3.6.0.min.js" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\js\jquery-ui.js" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\js\jquery.color-2.2.0.min.js" />
@@ -207,6 +216,9 @@
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\08flex2.html" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\09dotli.html" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\10slider.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\10slider4.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\10slider3.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\10slider2.html" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\11keyevent.html" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\12formevent.html" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\13windowevent.html" />
@@ -224,6 +236,7 @@
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\tesla1.jpg" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\images\tesla2.jpg" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\mousepriority.html" />
+    <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab04\textval.html" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab05\01onevent.html" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab05\02elementManipulation.html" />
     <Content Include="jQueryLabsrcMSIT%2820220429%29\Lab05\03eventbubble.html" />
