@@ -37,19 +37,19 @@
             //對於HTML元素本身就帶有的固有屬性使用attr()及prop()讀取和設定，(google HTML spec)
             //對於checked，selected，disabled 使用prop讀取和設定，
             //使用attr()讀取為字串，使用prop()讀取為true 或 false
-            //固有屬性和checked用removeAttr,自定屬性用removeProp
+            
             
             //對於HTML元素本身就帶有的固有屬性使用attr()及prop()讀取和設定
             // console.log($("#ida").attr("href"));      
             // console.log($("#ida").prop("href"));      
-            // console.log($("#ida").css("href")); 
+            // console.log($("#ida").css("href")); // undefined
             // $("#ida").attr("href","https://www.ispan.com.tw"); 
             // $("#ida").prop("href","https://www.ispan.com.tw"); 
-            // $("#ida").css("href","https://www.ispan.com.tw");  
+            // $("#ida").css("href","https://www.ispan.com.tw");  // undefined
 
             //對於checked，selected，disabled 使用prop讀取和設定
-            // console.log($("#idchk").attr("checked"));    
-            // console.log($("#idchk").prop("checked"));                               
+            // console.log($("#idchk").attr("checked"));  // 取得"初始"值   
+            // console.log($("#idchk").prop("checked"));  // 取得"目前"值                             
             // $("#idchk").attr("checked",false); 
             // console.log($("#idchk").attr("checked"));                      
             // $("#idchk").attr("checked",true); 
@@ -60,10 +60,10 @@
             // $("#idchk").prop("checked",true); 
             // console.log($("#idchk").prop("checked"));  
              
-            //attr() vs prop()
+            //attr() vs prop() // 真假值用prop,其他都值可以
 
             // console.log($(":checkbox").eq(1).attr('checked'));   //??       
-            // console.log($(":checkbox").eq(2).attr('checked'));   //checked   
+            // console.log($(":checkbox").eq(2).attr('checked'));   //checked   // checked只要有設定都會是true(checked)
             // console.log($(":checkbox").eq(3).attr('checked'));   //true      
             // console.log($(":checkbox").eq(4).attr('checked'));   //on        
             // console.log($(":checkbox").eq(5).attr('checked'));   //yes      
@@ -71,18 +71,19 @@
 
             // console.log($(":checkbox").eq(1).prop('checked'));   
             // console.log($(":checkbox").eq(2).prop('checked'));   
-            // console.log($(":checkbox").eq(3).prop('checked'));   
+            // console.log($(":checkbox").eq(3).prop('checked'));               // checked只要有設定都會是true(checked)
             // console.log($(":checkbox").eq(4).prop('checked'));   
             // console.log($(":checkbox").eq(5).prop('checked'));   
             // console.log($(":checkbox").eq(6).prop('checked'));   
 
         });              
+        //固有屬性和checked用removeAttr,自定屬性用removeProp
 
         $("#btn2").click(function(){                            
-            // $("#ida").removeAttr("href");  
-            // $("#ida").removeProp("href");   
-            // $(":checked").removeAttr("checked");
-            // $(":checked").removeProp("checked"); 
+            //$("#ida").removeAttr("href");  // OK
+            //$("#ida").removeProp("href");  // 無效 
+            // $(":checked").removeAttr("checked"); // OK
+            // $(":checked").removeProp("checked"); // 無效
         });
 
         $("#btn3").click(function(){

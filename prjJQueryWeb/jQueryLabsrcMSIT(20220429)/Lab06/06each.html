@@ -14,12 +14,25 @@
     <p id="demo"></p>
     <hr>
     <input type="button" id="btn1" value="selector.each()">
-
+<table>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+    </tr>
+</table>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script>
+        console.log($("td")[1]); // <td>B</td>
+        console.log($("td").get(2)); // <td>C</td>
+
         $("#btn1").click(function(){                             
             $("li").each(function(index,element){
-                                                            
+                // console.log(index);
+                // console.log(element); // JavaScript element
+                // console.log(this); // this = element
+                // console.log($(this).text());
+                $("#demo").append(`<li>${$(this).text()}</li>`)                                                            
             });                  
         });
     </script>

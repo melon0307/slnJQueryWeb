@@ -8,10 +8,10 @@
     <div id="msg"></div>
     <script src="../js/jquery-3.6.0.min.js"></script>
    <script>
-       let ary=["item1", "item2", "item3"];
-        $.each(ary,function(index,value){
-            console.log(index+":"+value);
-        });
+    //    let ary=["item1", "item2", "item3"];
+    //     $.each(ary,function(index,value){
+    //         console.log(index+":"+value);
+    //     });
 
         
     
@@ -21,6 +21,15 @@
                       {"name":"Jack","workYears":5,"salary":40000},
                       {"name":"Mary","workYears":7,"salary":45000}
                    ]};
+
+        $.each(data, function(index,values){            
+            $.each(values, function(index,value){
+                let name = value.name,
+                    wy = value.workYears,
+                    salary = value.salary;
+                $("#msg").append(`<li>${name}, ${wy}, ${salary}</li>`);
+            })
+        })
     
    </script> 
 </body>

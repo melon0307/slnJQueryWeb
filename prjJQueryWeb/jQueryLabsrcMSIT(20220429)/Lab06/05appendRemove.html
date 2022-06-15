@@ -57,7 +57,25 @@
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script>
         $("#add").click(function () {
+            let name = $("#name").val(),
+                tel = $("#tel").val(),
+                email = $("#email").val();
+            
+            let newRow = 
+            `<tr>
+                <td>${name}</td>
+                <td>${tel}</td>
+                <td>${email}</td>
+                <td>
+                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-trash-can"></i></button>
+                </td>
+            </tr>`
+            
+            $("#tbody").append(newRow);
 
+            $("#tbody").on("click",".btn-primary",function(){
+                $(this).closest("tr").remove();
+            })
         });
     </script>
 </body>

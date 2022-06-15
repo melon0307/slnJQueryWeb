@@ -31,6 +31,15 @@
 
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script>
+        let pageHeight = $(document).height(),
+            windowHeight = $(window).height();
+        
+            $(window).scroll(function(){
+                let scrollTop = $(this).scrollTop(),
+                    scrollPercent = Math.round((scrollTop/(pageHeight-windowHeight))*100)+"%";
+                
+                $("#read_progress_bar").width(scrollPercent);
+            })
 
 
     </script>

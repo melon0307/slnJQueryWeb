@@ -60,8 +60,19 @@
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script>
         $(".number").on("change keyup", function(){
+            let tr = $(this).closest("tr"),       // .number上的row
+                quantity = $(this).val(),         // 數量
+                price = tr.find(".price").text(), // 單價
+                s_price = quantity * price,       // 小計
+                total = 0;                        // 總金額
+
+            tr.find(".s_price").text(s_price);
             
-            
+            $(".s_price").each(function(){
+                total += Number($(this).text());  // 字串轉數值
+            })
+
+            $("#total").text(total);
         });
     </script>
 </body>

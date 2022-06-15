@@ -15,17 +15,19 @@
     <script>
         //事件優先順序 keydown->keypress->keyup
             $("#idText").keydown(function(){
-            console.log("keydown");
+            console.log("keydown");            
+           // $("#showName").text($(this).val());
         });
 
         $("#idText").keyup(function(){
             console.log("keyup"); 
             //輸入值在#showName顯示
-            
+            $("#showName").text($(this).val());// 只有keyup讀出的結果直是最正確的
         });                
 
         $("#idText").keypress(function(){
-            console.log("keypress");
+            console.log("keypress");            
+           // $("#showName").text($(this).val());
         });               
     </script>
 </body>

@@ -25,6 +25,10 @@
     
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script>
+        // console.log($("#div1").width()); // 400
+        // console.log($("div1").css("width")); //400px
+        // console.log($(window).width());
+        // console.log($(window).css("width")); // error   
         move_div();
 
         //當視窗放大或縮小時呼叫move_div的函式
@@ -32,7 +36,17 @@
         $(window).resize(move_div);
 
         function move_div() {
-            
+            let windowWidth = $(this).width(),
+                windowHeight = $(this).height(),
+                objWidth = $("#div1").width(),
+                objHeight = $("#div1").height(),
+                left = (windowWidth - objWidth) / 2,
+                top = (windowHeight - objHeight) / 2;
+                
+            $("#div1").css({
+                "top":top,
+                "left":left
+            });
         }   
     </script>
 </body>
