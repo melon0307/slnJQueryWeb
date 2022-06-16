@@ -32,9 +32,14 @@
         
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script>
-        $("#has").click(function(){ 
+        $("#has").click(function(){
+             
             //找出class為color的選擇器中，含有has的類別,新增bd類別              
-                
+                $(".color").each(function(){
+                    let h = $(this).hasClass("has");
+                    if(h)
+                        $(this).addClass("bd");
+                })
         });
     </script>
 

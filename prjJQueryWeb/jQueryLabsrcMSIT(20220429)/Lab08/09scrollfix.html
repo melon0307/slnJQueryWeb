@@ -18,6 +18,16 @@
       top: 0;
       width: 100%;
     }
+    #top{
+      position:fixed;
+      visibility: hidden;      
+      right:0%;
+      top:90vh;      
+    }
+
+    #top.active{
+      visibility: visible;
+    }
   </style>
 </head>
 
@@ -70,7 +80,7 @@
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        </form>        
       </div>
     </div>
   </nav>
@@ -114,15 +124,31 @@
   <p>今天兩隊各自有比賽，不過話題依舊圍繞在前天的獨行俠、湖人之戰，當時湖人憑藉著詹皇39分12籃板16助攻，最終在延長賽擊敗獨行俠， Doncic則繳出31分15助攻13籃板，令人驚豔。</p>
   <p>詹皇今天受訪時再度被問到關於 Doncic的話題，他也不吝稱讚，給出高度評價，「顯然他是一個年輕且偉大的天才，我喜歡他的比賽，他不僅會替自己製造機會，也會幫助隊友。」</p>
   <p>而Doncic賽後被記者問到對於詹皇稱讚，他說，「這對我來說真的很瘋狂，我一直努力追隨著他，從一開始他就是我的偶像，能和他同場較勁，聽到他對我的讚美，對我來說很特別。」</p>
-
+  <button id="top" class="btn btn-primary">↑</button>
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script>
     //offset() ：讀取指定元素在頁面(文件)上的相對坐標，
-    //回傳含有top及left屬性的物件                  
+    //回傳含有top及left屬性的物件
+    let navPosition = $("#navbar").offset().top;
 
     $(window).scroll(function () {
+      let scrollTop = $(this).scrollTop();
 
+      if(scrollTop > navPosition)
+        $("#navbar").addClass("fixed_nav");
+      else
+        $("#navbar").removeClass("fixed_nav");
+
+      if(scrollTop > 0)
+        $("#top").addClass("active");
+      else
+        $("#top").removeClass("active");
     });
+    $("#top").click(function(){
+      $("html").animate({
+        scrollTop:0
+      },200)
+    })
   </script>
 </body>
 

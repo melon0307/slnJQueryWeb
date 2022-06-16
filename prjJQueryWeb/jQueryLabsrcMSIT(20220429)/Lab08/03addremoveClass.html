@@ -32,17 +32,23 @@
         
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script>
+        $(".box").hover(function(){
+            $(this).addClass("active");
+        },function(){
+            $(this).removeClass("active");
+        })
+
         $("#add").click(function(){
             //新增 .active
-            
+            $(".box").addClass("active");
         });
         $("#remove").click(function(){
             //刪除 .active
-            
+            $(".box").removeClass("active");
         });
         $("#toggle").click(function(){
             //切換 .active
-            
+            $(".box").toggleClass("active");
         });            
     </script>
 </body>

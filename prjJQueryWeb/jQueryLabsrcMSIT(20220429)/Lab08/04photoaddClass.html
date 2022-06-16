@@ -48,8 +48,10 @@
       <script src="../js/jquery-3.6.0.min.js"></script>
       <script>
         $("figure").click(function(){
+            let pic = $(this).find("img").prop("src");
+            $("#mainPic").prop("src", pic);
 
-            
+            $(this).addClass("active").siblings().removeClass("active");
         });
     </script>
   </body>

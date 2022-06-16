@@ -36,9 +36,13 @@
         
     </div>
     <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>            
+    <script>
+    $(".btn").eq(1).addClass("active"); // 載入頁面時，先選取中(css)
+    
         $(".btn").click(function(){
-                        
+            let size = $(this).data("size");
+            $(this).addClass("active").siblings().removeClass("active"); // 此檔案內無定義.active，但有連結到bootstrap，因此套用bootstrap的.active
+            $("html").removeClass().addClass(size);
         });
     </script>
 </body>
