@@ -1,0 +1,59 @@
+﻿#box {
+    justify-content: center;
+    margin: 15px;
+    margin-left: 30%;
+}
+
+#select {
+    display: flex;
+    align-items: end;    
+}
+
+    #select select {
+        min-width: 60px;
+        width: fit-content;
+        font-size: 16px;
+    }
+
+#zipTable {
+    margin-left: 30%;
+}
+
+.city {
+    display: flex;
+    align-items: center;
+    border: 1px purple solid;
+    border-bottom: 0;
+    width: fit-content;
+}
+
+    .city:last-child {
+        border-bottom: 1px purple solid;
+    }
+
+    .city > div {
+        border-left: 1px purple solid
+    }
+
+        .city > div > div {
+            width: 150px;
+            display: flex;
+            align-items: center;
+            
+            border-top: 1px purple solid
+        }
+
+            .city > div > div:first-child {
+                border-top: 0;                
+            }
+
+            .city > div > div  div:first-child {
+                width: 40px;
+                font-size: 20px;
+                border-right: 1px purple solid;                
+            }
+
+.move {
+    position: fixed;
+    top: 0;
+}
